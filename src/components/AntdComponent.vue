@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>当前时间：{{ now }}</h1>
 
     <a-table :columns="columns" :data-source="data">
     <a slot="name" slot-scope="text">{{ text }}</a>
@@ -80,15 +80,19 @@ const data = [
   },
 ];
 
+import moment from 'moment';
+
 export default {
   name: 'AntdComponent',
-  props: {
-    msg: String
-  },
   data() {
     return {
       data,
       columns
+    }
+  },
+  computed: {
+    now() {
+      return moment().calendar()
     }
   }
 }
