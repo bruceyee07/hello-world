@@ -1,0 +1,17 @@
+1. init
+
+File                                 Size                                                                                  Gzipped
+
+  dist/js/chunk-vendors.a23d848c.js    86.20 KiB                                                                             30.64 KiB
+  dist/js/app.1f8521ac.js              11.13 KiB                                                                             7.95 KiB
+  dist/css/app.d17be60f.css            0.33 KiB                                                                              0.23 KiB
+
+
+
+2. add ant-design-vue
+File                                   Size                                                                                 Gzipped
+
+  dist/js/chunk-vendors.b5cc59c1.js      1825.71 KiB                                                                          524.16 KiB
+  dist/js/app.bbd70d6c.js                17.23 KiB                                                                            10.42 KiB
+  dist/css/chunk-vendors.c3edc512.css    440.11 KiB                                                                           55.08 KiB
+  dist/css/app.24208889.css              0.51 KiB                                                                             0.25 KiB
