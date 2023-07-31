@@ -3,6 +3,9 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/hello-world/'
+    : '/',
   configureWebpack: {
     plugins: [
       new BundleAnalyzerPlugin()
