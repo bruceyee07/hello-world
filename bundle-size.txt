@@ -22,3 +22,11 @@ File                                   Size                                     
   dist/js/app.82f6010a.js                17.29 KiB                                                                            10.51 KiB
   dist/css/chunk-vendors.c3edc512.css    440.11 KiB                                                                           55.08 KiB
   dist/css/app.95a54eeb.css              0.51 KiB                                                                             0.25 KiB
+
+4. add vue-echarts
+File                                   Size                                                                                 Gzipped
+
+  dist/js/chunk-vendors.537c695e.js      2285.60 KiB                                                                          675.94 KiB
+  dist/js/app.cbe21ff4.js                18.51 KiB                                                                            11.06 KiB
+  dist/css/chunk-vendors.c3edc512.css    440.11 KiB                                                                           55.08 KiB
+  dist/css/app.8bcd567a.css              0.54 KiB                                                                             0.27 KiB                                                                         0.29 KiB

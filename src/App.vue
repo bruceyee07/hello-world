@@ -3,18 +3,21 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <AntdComponent />
+    <CustomChart />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import AntdComponent from './components/AntdComponent.vue';
+import AntdComponent from './components/AntdComponent.vue'
+import CustomChart from './components/CustomChart'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    AntdComponent
+    AntdComponent,
+    CustomChart
   }
 }
 </script>
