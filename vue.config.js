@@ -9,6 +9,16 @@ module.exports = defineConfig({
   configureWebpack: {
     plugins: [
       new BundleAnalyzerPlugin()
-    ]
+    ],
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          default: {
+            name: 'common',
+            chunks: 'initial'
+          }
+        }
+      }
+    }
   }
 })
