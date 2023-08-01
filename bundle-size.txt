@@ -37,3 +37,14 @@ File                            Size                                            
   dist/js/common.db659303.js      2276.86 KiB                                                                              672.62 KiB
   dist/js/app.1ab975ea.js         1.89 KiB                                                                                 0.92 KiB
   dist/css/common.850f1120.css    440.65 KiB                                                                               55.22 KiB
+
+6. add cacheGroups
+File                                 Size                                                                                  Gzipped
+
+  dist/js/chunk-vendors.1cdb2b9d.js    913.95 KiB                                                                            286.89 KiB
+  dist/js/ant.059322fa.js              811.53 KiB                                                                            228.50 KiB
+  dist/js/moment.32ee03c2.js           297.98 KiB                                                                            72.07 KiB
+  dist/js/echarts.4db2cf22.js          262.77 KiB                                                                            88.36 KiB
+  dist/js/app.ddfca0f5.js              9.61 KiB                                                                              4.00 KiB
+  dist/css/ant.c3edc512.css            440.11 KiB                                                                            55.08 KiB
+  dist/css/app.bdc6850b.css            0.54 KiB                                                                              0.27 KiB
