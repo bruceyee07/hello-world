@@ -9,6 +9,10 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted() {
+    console.log('testing remove console.log...')
+    // testing remove comments
   }
 }
 </script>

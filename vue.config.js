@@ -1,8 +1,21 @@
 const { defineConfig } = require('@vue/cli-service')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin")
+const TerserWebpackPlugin = require('terser-webpack-plugin')
 
 const smp = new SpeedMeasurePlugin()
+const terserPlugin = new TerserWebpackPlugin({
+  parallel: 4,
+  extractComments: true,
+  terserOptions: {
+    compress: {
+      warnings: false,
+      drop_console: true,
+      drop_debugger: true,
+      pure_funcs: ['console.log'] // 移除console
+    }
+  }
+})
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -14,6 +27,10 @@ module.exports = defineConfig({
       new BundleAnalyzerPlugin()
     ],
     optimization: {
+      minimizer: [
+        // 只有打包环境为 production 时才能生效
+        terserPlugin
+      ],
       splitChunks: {
         chunks: 'all',
         minSize: 25600,  // 提取出的chunk的最小大小
