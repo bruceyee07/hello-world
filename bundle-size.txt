@@ -48,3 +48,16 @@ File                                 Size                                       
   dist/js/app.ddfca0f5.js              9.61 KiB                                                                              4.00 KiB
   dist/css/ant.c3edc512.css            440.11 KiB                                                                            55.08 KiB
   dist/css/app.bdc6850b.css            0.54 KiB                                                                              0.27 KiB
+
+7. 拆分 ant-design
+File                                 Size                                                                                  Gzipped
+
+  dist/js/ant-vue.6700c703.js          811.45 KiB                                                                            228.44 KiB
+  dist/js/ant.65cd8a9e.js              487.35 KiB                                                                            148.69 KiB
+  dist/js/chunk-vendors.8fede6f5.js    360.61 KiB                                                                            117.79 KiB
+  dist/js/moment.b54bd3aa.js           297.97 KiB                                                                            72.08 KiB
+  dist/js/echarts.a53707f6.js          263.35 KiB                                                                            88.76 KiB
+  dist/js/lodash.812f271e.js           111.47 KiB                                                                            36.51 KiB
+  dist/js/app.3902f587.js              9.73 KiB                                                                              4.08 KiB
+  dist/css/ant-vue.c3edc512.css        440.11 KiB                                                                            55.08 KiB
+  dist/css/app.8113bdd1.css            0.54 KiB                                                                              0.28 KiB

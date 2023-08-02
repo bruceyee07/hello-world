@@ -4,6 +4,7 @@
     <HelloWorld msg="hello world"/>
     <AntdComponent />
     <CustomChart />
+    <PdfPreview />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import AntdComponent from './components/AntdComponent.vue'
 import CustomChart from './components/CustomChart'
+import PdfPreview from './components/PdfPreview'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     AntdComponent,
-    CustomChart
+    CustomChart,
+    PdfPreview
   }
 }
 </script>

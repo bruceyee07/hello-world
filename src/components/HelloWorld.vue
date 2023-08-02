@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import _ from 'lodash'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -13,6 +15,8 @@ export default {
   mounted() {
     console.log('testing remove console.log...')
     // testing remove comments
+    const res = _.flatten([1, [2, [3, [4]], 5]])
+    console.log(res)
   }
 }
 </script>
