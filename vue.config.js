@@ -1,19 +1,17 @@
 const { defineConfig } = require('@vue/cli-service')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin")
-
-const smp = new SpeedMeasurePlugin()
 
 module.exports = defineConfig({
   transpileDependencies: true,
   publicPath: process.env.NODE_ENV === 'production'
     ? '/hello-world/'
     : '/',
-  configureWebpack: smp.wrap({
+  configureWebpack: {
     plugins: [
       new BundleAnalyzerPlugin()
     ],
     optimization: {
+     
       splitChunks: {
         chunks: 'all',
         minSize: 25600,  // 提取出的chunk的最小大小
@@ -52,5 +50,5 @@ module.exports = defineConfig({
         }
       }
     }
-  })
+  }
 })
