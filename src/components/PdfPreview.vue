@@ -1,13 +1,25 @@
 <template>
   <div class="preview-pdf">
     <div style="text-align:center;">
-      <a-button id="prev" @click="onPrePage">&lt;</a-button>
+      <a-button
+        id="prev"
+        @click="onPrePage"
+      >&lt;</a-button>
       <span style="margin: 0 10px;">
         <span id="page_num">{{ currentPage }}</span>
         /
         <span id="page_count">{{ totalPages }}</span>
       </span>
-      <a-button id="next" @click="onNextPage"> > </a-button>
+      <a-button
+        id="next"
+        @click="onNextPage"
+      > > </a-button>
+      <a-button
+        style="marginLeft: 20px;"
+        type="primary"
+        id="download"
+        @click="download"
+      > 下载 </a-button>
     </div>
 
     <div :style="`margin:0 auto; width: ${pdfWidth};`">
@@ -110,15 +122,19 @@ export default {
     queueRender(num) {
       // 渲染等待；如果正在进行另一个页面渲染，请等待渲染完成。否则，立即执行渲染
       !this.pageRendering ? this.renderPage(num) : (this.pageNumPending = num);
+    },
+    download() {
+
     }
   }
 };
 </script>
+
 <style>
 .preview-pdf h1 {
   margin: 30px auto;
   text-align: center;
-  font-family: '宋体';
+  font-family: "宋体";
   letter-spacing: 2px;
 }
 </style>
